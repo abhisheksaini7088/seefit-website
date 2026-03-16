@@ -40,24 +40,24 @@ export default function Home() {
         <div style={{ margin: '10px' }}>💪 <strong>Trainer:</strong> Abhishek (6398851797)</div>
       </div>
 
-      {/* AUTOPLAY VIDEO SECTION */}
+      {/* AUTOPLAY VIDEO SECTION WITH CONTROLS */}
       <div style={{ backgroundColor: '#111', padding: '60px 20px', textAlign: 'center' }}>
         <h2 style={{ fontSize: '2.5rem', color: '#ff4500', marginBottom: '10px', textTransform: 'uppercase' }}>Experience The Vibe</h2>
-        <p style={{ color: '#aaa', marginBottom: '30px', fontSize: '1.1rem' }}>Take a quick tour of our premium facility.</p>
+        <p style={{ color: '#aaa', marginBottom: '30px', fontSize: '1.1rem' }}>Take a quick tour of our premium facility. (Click the volume icon to unmute)</p>
         <div style={{ maxWidth: '900px', margin: '0 auto', border: '5px solid #333', borderRadius: '15px', overflow: 'hidden', boxShadow: '0 10px 30px rgba(0,0,0,0.5)' }}>
-          {/* Note: Autoplay requires 'muted' to work on Chrome/Safari */}
+          {/* Yahan 'controls' add kiya hai jisse sound aur play/pause ka button aayega */}
           <video 
             src="https://www.w3schools.com/html/mov_bbb.mp4" 
             autoPlay 
             loop 
             muted 
+            controls
             playsInline 
             style={{ width: '100%', display: 'block' }}
           >
             Your browser does not support the video tag.
           </video>
         </div>
-        <p style={{ color: '#555', fontSize: '0.9rem', marginTop: '10px' }}>(Sample Video - Ise hum baad mein tumhari gym video se replace karenge)</p>
       </div>
 
       {/* Mission & Services */}
@@ -133,49 +133,4 @@ export default function Home() {
           
           {/* Contact Form */}
           <div style={{ flex: '1 1 400px', backgroundColor: '#343a40', padding: '30px', borderRadius: '15px' }}>
-            <h3 style={{ fontSize: '2rem', color: '#ff4500', margin: '0 0 20px 0' }}>Join The Tribe!</h3>
-            <p style={{ marginBottom: '20px', color: '#ccc' }}>Fill out the form and our team will get back to you.</p>
-            <form action="mailto:shekhar_saini2112@icloud.com" method="post" encType="text/plain" style={{ display: 'flex', flexDirection: 'column', gap: '15px' }}>
-              <input type="text" name="Name" placeholder="Your Name" required style={{ padding: '12px', borderRadius: '5px', border: 'none', fontSize: '1rem' }} />
-              <input type="tel" name="Phone" placeholder="Your Phone Number" required style={{ padding: '12px', borderRadius: '5px', border: 'none', fontSize: '1rem' }} />
-              <select name="Goal" style={{ padding: '12px', borderRadius: '5px', border: 'none', fontSize: '1rem', color: '#555' }}>
-                <option value="General Fitness">General Fitness</option>
-                <option value="Weight Loss">Weight Loss</option>
-                <option value="Muscle Gain">Muscle Gain</option>
-                <option value="Personal Training">Personal Training</option>
-              </select>
-              <button type="submit" style={{ padding: '15px', fontSize: '1.1rem', fontWeight: 'bold', color: '#fff', backgroundColor: '#ff4500', border: 'none', borderRadius: '5px', cursor: 'pointer', textTransform: 'uppercase' }}>
-                Submit Inquiry
-              </button>
-            </form>
-          </div>
-
-          {/* Contact Details & Map/WhatsApp Buttons */}
-          <div style={{ flex: '1 1 400px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-            <h3 style={{ fontSize: '2rem', color: '#fff', margin: '0 0 20px 0' }}>Visit Us</h3>
-            <p style={{ fontSize: '1.2rem', margin: '10px 0' }}>📍 <strong>Address:</strong> 2nd floor Vohra Tower, Above Suvidha Store, Sudhowala, Dehradun</p>
-            <p style={{ fontSize: '1.2rem', margin: '10px 0' }}>📞 <strong>Contact:</strong> 7906049106</p>
-            <p style={{ fontSize: '1.2rem', margin: '10px 0' }}>📱 <strong>Instagram:</strong> <a href="https://instagram.com/seefit21" target="_blank" rel="noreferrer" style={{ color: '#E1306C', textDecoration: 'none' }}>@seefit21</a></p>
-            
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '15px', marginTop: '20px' }}>
-              {/* Google Maps Button */}
-              <a href="https://www.google.com/maps/search/?api=1&query=Vohra+Tower,+Above+Suvidha+Store,+Sudhowala,+Dehradun" target="_blank" rel="noreferrer" style={{ padding: '12px 20px', fontSize: '1.1rem', fontWeight: 'bold', color: '#212529', backgroundColor: '#fff', textDecoration: 'none', borderRadius: '5px', textAlign: 'center' }}>
-                🌍 Open in Google Maps
-              </a>
-              
-              {/* WhatsApp Button */}
-              <a href="https://wa.me/917906049106?text=Hi%20SEE%20FIT%20Gym!%20I%20want%20to%20know%20more%20about%20the%20membership." target="_blank" rel="noreferrer" style={{ padding: '12px 20px', fontSize: '1.1rem', fontWeight: 'bold', color: '#fff', backgroundColor: '#25D366', textDecoration: 'none', borderRadius: '5px', textAlign: 'center' }}>
-                💬 Chat on WhatsApp
-              </a>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <footer style={{ padding: '20px', textAlign: 'center', backgroundColor: '#111', color: '#666' }}>
-        <p style={{ margin: 0 }}>© 2026 SEE FIT Gym. All Rights Reserved.</p>
-      </footer>
-    </div>
-  );
-}
+            <h3 style={{ fontSize: '2rem', color: '#
