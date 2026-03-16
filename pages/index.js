@@ -8,17 +8,17 @@ export default function Home() {
       </Head>
 
       {/* Hero Section */}
-      <div style={{ position: 'relative', height: '80vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center', backgroundColor: '#ffffff', overflow: 'hidden' }}>
-        {/* JAB TUM IMAGE UPLOAD KAR LOGE, TOH NICHE WALE LINK KO HATAKAR APNI IMAGE KA NAAM DALNA HOGA (eg. url("/main-bg.jpg")) */}
-        <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, backgroundImage: 'url("https://images.unsplash.com/photo-1540497077202-7c8a3999166f?q=80&w=2070&auto=format&fit=crop")', backgroundSize: 'cover', backgroundPosition: 'center', opacity: 0.15, zIndex: 0 }}></div>
+      <div style={{ position: 'relative', height: '80vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center', backgroundColor: '#000', overflow: 'hidden' }}>
+        {/* Yahan tumhari background image lagayi hai */}
+        <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, backgroundImage: 'url("/IMG-20260227-WA0000.jpg")', backgroundSize: 'cover', backgroundPosition: 'center', opacity: 0.3, zIndex: 0 }}></div>
         <div style={{ position: 'relative', zIndex: 1, padding: '20px' }}>
           <h1 style={{ fontSize: '5rem', fontWeight: '900', letterSpacing: '2px', margin: '0', color: '#ff4500', textTransform: 'uppercase' }}>
             SEE FIT
           </h1>
-          <p style={{ fontSize: '1.8rem', fontWeight: 'bold', marginTop: '10px', color: '#333' }}>
+          <p style={{ fontSize: '1.8rem', fontWeight: 'bold', marginTop: '10px', color: '#fff' }}>
             Everyday is an opportunity
           </p>
-          <p style={{ fontSize: '1.1rem', color: '#666', marginTop: '5px', fontWeight: '500' }}>
+          <p style={{ fontSize: '1.1rem', color: '#ccc', marginTop: '5px', fontWeight: '500' }}>
             Transforming lives since 15 Feb 2026 | 5+ Years Experience
           </p>
           <a href="#join" style={{ display: 'inline-block', marginTop: '30px', padding: '15px 40px', fontSize: '1.2rem', fontWeight: 'bold', color: '#fff', backgroundColor: '#ff4500', textDecoration: 'none', borderRadius: '50px', textTransform: 'uppercase', letterSpacing: '1px', boxShadow: '0px 4px 15px rgba(255, 69, 0, 0.4)' }}>
@@ -34,20 +34,43 @@ export default function Home() {
         <div style={{ margin: '10px' }}>💪 <strong>Trainer:</strong> Abhishek (6398851797)</div>
       </div>
 
-      {/* Mission & Services */}
+      {/* Gym Vibe Video Section */}
+      <div style={{ backgroundColor: '#111', padding: '60px 20px', textAlign: 'center' }}>
+        <h2 style={{ fontSize: '2.5rem', color: '#ff4500', marginBottom: '30px', textTransform: 'uppercase' }}>Experience The Vibe</h2>
+        <video controls autoPlay muted loop style={{ maxWidth: '100%', width: '800px', borderRadius: '15px', boxShadow: '0 10px 30px rgba(255, 69, 0, 0.2)', border: '2px solid #333' }}>
+          {/* Yahan tumhara video link kiya hai */}
+          <source src="/VID-20260227-WA0005.mp4" type="video/mp4" />
+          Your browser does not support the video.
+        </video>
+      </div>
+
+      {/* Gym Gallery Section */}
       <div style={{ padding: '60px 20px', maxWidth: '1200px', margin: '0 auto', textAlign: 'center' }}>
-        <h2 style={{ fontSize: '2.5rem', color: '#ff4500', marginBottom: '40px', textTransform: 'uppercase' }}>Our Mission</h2>
+        <h2 style={{ fontSize: '2.5rem', color: '#ff4500', marginBottom: '40px', textTransform: 'uppercase' }}>Our Space</h2>
         <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '20px' }}>
-          {['Personal Training', 'CrossFit', 'Group Training', 'Zumba & Yoga Classes', 'Custom Diet & Workout Plan', 'Fat Loss & Weight Gaining'].map((item, index) => (
-            <div key={index} style={{ backgroundColor: '#fff', padding: '20px 30px', borderRadius: '10px', boxShadow: '0 4px 6px rgba(0,0,0,0.05)', fontSize: '1.2rem', fontWeight: 'bold', color: '#333', borderBottom: '4px solid #ff4500' }}>
-              ✓ {item}
-            </div>
-          ))}
+          {/* Yahan tumhari 3 baaki photos lagayi hain */}
+          <img src="/IMG-20260227-WA0002.jpg" alt="SEE FIT Space 1" style={{ width: '350px', height: '250px', objectFit: 'cover', borderRadius: '10px', boxShadow: '0 4px 10px rgba(0,0,0,0.1)' }} />
+          <img src="/IMG-20260227-WA0003.jpg" alt="SEE FIT Space 2" style={{ width: '350px', height: '250px', objectFit: 'cover', borderRadius: '10px', boxShadow: '0 4px 10px rgba(0,0,0,0.1)' }} />
+          <img src="/IMG-20260227-WA0004.jpg" alt="SEE FIT Space 3" style={{ width: '350px', height: '250px', objectFit: 'cover', borderRadius: '10px', boxShadow: '0 4px 10px rgba(0,0,0,0.1)' }} />
+        </div>
+      </div>
+
+      {/* Mission & Services */}
+      <div style={{ backgroundColor: '#e9ecef', padding: '60px 20px' }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto', textAlign: 'center' }}>
+          <h2 style={{ fontSize: '2.5rem', color: '#ff4500', marginBottom: '40px', textTransform: 'uppercase' }}>Our Mission</h2>
+          <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '20px' }}>
+            {['Personal Training', 'CrossFit', 'Group Training', 'Zumba & Yoga Classes', 'Custom Diet & Workout Plan', 'Fat Loss & Weight Gaining'].map((item, index) => (
+              <div key={index} style={{ backgroundColor: '#fff', padding: '20px 30px', borderRadius: '10px', boxShadow: '0 4px 6px rgba(0,0,0,0.05)', fontSize: '1.2rem', fontWeight: 'bold', color: '#333', borderBottom: '4px solid #ff4500' }}>
+                ✓ {item}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
 
       {/* Membership Plans */}
-      <div style={{ backgroundColor: '#e9ecef', padding: '60px 20px' }}>
+      <div style={{ padding: '60px 20px' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto', textAlign: 'center' }}>
           <h2 style={{ fontSize: '2.5rem', color: '#ff4500', marginBottom: '40px', textTransform: 'uppercase' }}>Membership Plans</h2>
           <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '30px' }}>
@@ -73,7 +96,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Facilities & Equipment (Combined for space) */}
+      {/* Facilities & Equipment */}
       <div style={{ padding: '60px 20px', maxWidth: '1200px', margin: '0 auto', textAlign: 'center' }}>
         <h2 style={{ fontSize: '2.5rem', color: '#ff4500', marginBottom: '30px', textTransform: 'uppercase' }}>Premium Facilities & Equipment</h2>
         <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '10px', marginBottom: '30px' }}>
@@ -93,7 +116,6 @@ export default function Home() {
       <div id="join" style={{ backgroundColor: '#212529', color: '#fff', padding: '60px 20px' }}>
         <div style={{ maxWidth: '1000px', margin: '0 auto', display: 'flex', flexWrap: 'wrap', gap: '40px', justifyContent: 'center' }}>
           
-          {/* Contact Form */}
           <div style={{ flex: '1 1 400px', backgroundColor: '#343a40', padding: '30px', borderRadius: '15px' }}>
             <h3 style={{ fontSize: '2rem', color: '#ff4500', margin: '0 0 20px 0' }}>Join The Tribe!</h3>
             <p style={{ marginBottom: '20px', color: '#ccc' }}>Fill out the form and our team will get back to you.</p>
@@ -112,14 +134,12 @@ export default function Home() {
             </form>
           </div>
 
-          {/* Contact Details & Map */}
           <div style={{ flex: '1 1 400px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
             <h3 style={{ fontSize: '2rem', color: '#fff', margin: '0 0 20px 0' }}>Visit Us</h3>
             <p style={{ fontSize: '1.2rem', margin: '10px 0' }}>📍 <strong>Address:</strong> 2nd floor Vohra Tower, Above Suvidha Store, Sudhowala, Dehradun</p>
             <p style={{ fontSize: '1.2rem', margin: '10px 0' }}>📞 <strong>Contact:</strong> 7906049106</p>
             <p style={{ fontSize: '1.2rem', margin: '10px 0' }}>📱 <strong>Instagram:</strong> <a href="https://instagram.com/seefit21" style={{ color: '#E1306C', textDecoration: 'none' }}>@seefit21</a></p>
             
-            {/* Google Maps Button */}
             <a href="https://www.google.com/maps/search/?api=1&query=Vohra+Tower,+Above+Suvidha+Store,+Sudhowala,+Dehradun" target="_blank" rel="noreferrer" style={{ display: 'inline-block', marginTop: '20px', padding: '12px 20px', fontSize: '1.1rem', fontWeight: 'bold', color: '#212529', backgroundColor: '#fff', textDecoration: 'none', borderRadius: '5px', textAlign: 'center' }}>
               🌍 Open in Google Maps
             </a>
