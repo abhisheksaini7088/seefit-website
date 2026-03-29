@@ -1,6 +1,27 @@
 import Head from 'next/head';
 
 export default function Home() {
+  
+  // Ye function form submit hone par WhatsApp par data bhejega
+  const sendToWhatsApp = (e) => {
+    e.preventDefault(); // Page refresh hone se rokne ke liye
+    
+    // Form se data nikal rahe hain
+    const formData = new FormData(e.target);
+    const name = formData.get('Name');
+    const phone = formData.get('Phone');
+    const goal = formData.get('Goal');
+
+    // WhatsApp par bhejne wala message format kar rahe hain
+    const message = `Hello SEE FIT Gym! 💪\nI want to join the tribe. Here are my details:\n\n*Name:* ${name}\n*Phone:* ${phone}\n*Goal:* ${goal}`;
+    
+    // WhatsApp URL banana
+    const whatsappUrl = `https://wa.me/917906049106?text=${encodeURIComponent(message)}`;
+    
+    // Naye tab me WhatsApp open karna
+    window.open(whatsappUrl, '_blank');
+  };
+
   return (
     <div style={{ margin: 0, padding: 0, fontFamily: '"Segoe UI", Roboto, Helvetica, Arial, sans-serif', backgroundColor: '#f8f9fa', color: '#212529' }}>
       <Head>
@@ -133,7 +154,8 @@ export default function Home() {
           <div style={{ flex: '1 1 400px', backgroundColor: '#343a40', padding: '30px', borderRadius: '15px' }}>
             <h3 style={{ fontSize: '2rem', color: '#ff4500', margin: '0 0 20px 0' }}>Join The Tribe!</h3>
             <p style={{ marginBottom: '20px', color: '#ccc' }}>Fill out the form and our team will get back to you.</p>
-            <form action="mailto:shekhar_saini2112@icloud.com" method="post" encType="text/plain" style={{ display: 'flex', flexDirection: 'column', gap: '15px' }}>
+            {/* Yahan Form me onSubmit function lagaya gaya hai */}
+            <form onSubmit={sendToWhatsApp} style={{ display: 'flex', flexDirection: 'column', gap: '15px' }}>
               <input type="text" name="Name" placeholder="Your Name" required style={{ padding: '12px', borderRadius: '5px', border: 'none', fontSize: '1rem' }} />
               <input type="tel" name="Phone" placeholder="Your Phone Number" required style={{ padding: '12px', borderRadius: '5px', border: 'none', fontSize: '1rem' }} />
               <select name="Goal" style={{ padding: '12px', borderRadius: '5px', border: 'none', fontSize: '1rem', color: '#555' }}>
