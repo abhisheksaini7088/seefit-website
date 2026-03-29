@@ -5,6 +5,8 @@ export default function Home() {
     <div style={{ margin: 0, padding: 0, fontFamily: '"Segoe UI", Roboto, Helvetica, Arial, sans-serif', backgroundColor: '#f8f9fa', color: '#212529' }}>
       <Head>
         <title>SEE FIT Gym | Join our community</title>
+        {/* Yahan humne favicon add kiya hai jisse tab par logo dikhega */}
+        <link rel="icon" href="/see fit .jpeg" />
       </Head>
 
       {/* Hero Section */}
