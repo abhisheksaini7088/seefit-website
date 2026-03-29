@@ -29,7 +29,7 @@ export default function Home() {
 
       {/* Timings & Team Banner */}
       <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-around', backgroundColor: '#212529', color: '#fff', padding: '20px', textAlign: 'center' }}>
-        <div style={{ margin: '10px' }}>🕒 <strong>Timings:</strong> 5 AM To 11 PM (Sunday Also Open)</div>
+        <div style={{ margin: '10px' }}>🕒 <strong>Timings:</strong> 5 AM To 11 PM (No days off - open even on sundays!)</div>
         <div style={{ margin: '10px' }}>👑 <strong>Owner:</strong> Shekhar</div>
         <div style={{ margin: '10px' }}>💪 <strong>Trainer:</strong> Abhishek (6398851797)</div>
       </div>
