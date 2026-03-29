@@ -36,8 +36,8 @@ export default function Home() {
       {/* Timings & Team Banner */}
       <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-around', backgroundColor: '#212529', color: '#fff', padding: '20px', textAlign: 'center' }}>
         <div style={{ margin: '10px' }}>🕒 <strong>Timings:</strong> 5 AM To 11 PM (No days off - open even on sundays!)</div>
-        <div style={{ margin: '10px' }}>👑 <strong>Owner:</strong> Shekhar</div>
-        <div style={{ margin: '10px' }}>💪 <strong>Trainer:</strong> Abhishek (6398851797)</div>
+        <div style={{ margin: '10px' }}>🏅 <strong>Guided by certified trainers</strong></div>
+        <div style={{ margin: '10px' }}>💪 <strong>One-on-one personalized training available</strong></div>
       </div>
 
       {/* Gym Vibe Video Section */}
@@ -120,43 +120,4 @@ export default function Home() {
 
       {/* Inquiry Form & Contact Section */}
       <div id="join" style={{ backgroundColor: '#212529', color: '#fff', padding: '60px 20px' }}>
-        <div style={{ maxWidth: '1000px', margin: '0 auto', display: 'flex', flexWrap: 'wrap', gap: '40px', justifyContent: 'center' }}>
-          
-          <div style={{ flex: '1 1 400px', backgroundColor: '#343a40', padding: '30px', borderRadius: '15px' }}>
-            <h3 style={{ fontSize: '2rem', color: '#ff4500', margin: '0 0 20px 0' }}>Join The Tribe!</h3>
-            <p style={{ marginBottom: '20px', color: '#ccc' }}>Fill out the form and our team will get back to you.</p>
-            <form action="mailto:shekhar_saini2112@icloud.com" method="post" encType="text/plain" style={{ display: 'flex', flexDirection: 'column', gap: '15px' }}>
-              <input type="text" name="Name" placeholder="Your Name" required style={{ padding: '12px', borderRadius: '5px', border: 'none', fontSize: '1rem' }} />
-              <input type="tel" name="Phone" placeholder="Your Phone Number" required style={{ padding: '12px', borderRadius: '5px', border: 'none', fontSize: '1rem' }} />
-              <select name="Goal" style={{ padding: '12px', borderRadius: '5px', border: 'none', fontSize: '1rem', color: '#555' }}>
-                <option value="General Fitness">General Fitness</option>
-                <option value="Weight Loss">Weight Loss</option>
-                <option value="Muscle Gain">Muscle Gain</option>
-                <option value="Personal Training">Personal Training</option>
-              </select>
-              <button type="submit" style={{ padding: '15px', fontSize: '1.1rem', fontWeight: 'bold', color: '#fff', backgroundColor: '#ff4500', border: 'none', borderRadius: '5px', cursor: 'pointer', textTransform: 'uppercase' }}>
-                Submit Inquiry
-              </button>
-            </form>
-          </div>
-
-          <div style={{ flex: '1 1 400px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-            <h3 style={{ fontSize: '2rem', color: '#fff', margin: '0 0 20px 0' }}>Visit Us</h3>
-            <p style={{ fontSize: '1.2rem', margin: '10px 0' }}>📍 <strong>Address:</strong> 2nd floor Vohra Tower, Above Suvidha Store, Sudhowala, Dehradun</p>
-            <p style={{ fontSize: '1.2rem', margin: '10px 0' }}>📞 <strong>Contact:</strong> 7906049106</p>
-            <p style={{ fontSize: '1.2rem', margin: '10px 0' }}>📱 <strong>Instagram:</strong> <a href="https://instagram.com/seefit21" style={{ color: '#E1306C', textDecoration: 'none' }}>@seefit21</a></p>
-            
-            <a href="https://www.google.com/maps/search/?api=1&query=Vohra+Tower,+Above+Suvidha+Store,+Sudhowala,+Dehradun" target="_blank" rel="noreferrer" style={{ display: 'inline-block', marginTop: '20px', padding: '12px 20px', fontSize: '1.1rem', fontWeight: 'bold', color: '#212529', backgroundColor: '#fff', textDecoration: 'none', borderRadius: '5px', textAlign: 'center' }}>
-              🌍 Open in Google Maps
-            </a>
-          </div>
-
-        </div>
-      </div>
-
-      <footer style={{ padding: '20px', textAlign: 'center', backgroundColor: '#111', color: '#666' }}>
-        <p style={{ margin: 0 }}>© 2026 SEE FIT Gym. All Rights Reserved.</p>
-      </footer>
-    </div>
-  );
-}
+        <div style={{ maxWidth: '1000px',
