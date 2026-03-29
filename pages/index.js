@@ -12,9 +12,14 @@ export default function Home() {
         {/* Yahan tumhari background image lagayi hai */}
         <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, backgroundImage: 'url("/IMG-20260227-WA0000.jpg")', backgroundSize: 'cover', backgroundPosition: 'center', opacity: 0.3, zIndex: 0 }}></div>
         <div style={{ position: 'relative', zIndex: 1, padding: '20px' }}>
-          <h1 style={{ fontSize: '5rem', fontWeight: '900', letterSpacing: '2px', margin: '0', color: '#ff4500', textTransform: 'uppercase' }}>
-            SEE FIT
-          </h1>
+          
+          {/* Yahan text ki jagah aapka logo lagaya gaya hai */}
+          <img 
+            src="/see fit .jpeg" 
+            alt="SEE FIT Logo" 
+            style={{ width: '250px', maxWidth: '100%', height: 'auto', marginBottom: '10px' }} 
+          />
+          
           <p style={{ fontSize: '1.8rem', fontWeight: 'bold', marginTop: '10px', color: '#fff' }}>
             Everyday is an opportunity
           </p>
