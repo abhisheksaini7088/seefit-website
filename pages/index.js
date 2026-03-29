@@ -62,11 +62,11 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Timings & Team Banner */}
-      <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-around', backgroundColor: '#212529', color: '#fff', padding: '20px', textAlign: 'center' }}>
-        <div style={{ margin: '10px' }}>🕒 <strong>Timings:</strong> 5 AM To 11 PM (No days off - open even on sundays!)</div>
-        <div style={{ margin: '10px' }}>🏅 <strong>Guided by certified trainers</strong></div>
-        <div style={{ margin: '10px' }}>💪 <strong>One-on-one personalized training available</strong></div>
+      {/* Timings & Team Banner - Updated for better mobile view */}
+      <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', backgroundColor: '#212529', color: '#fff', padding: '20px 10px', textAlign: 'center', gap: '20px' }}>
+        <div style={{ flex: '1 1 300px' }}>🕒 <strong>Timings:</strong> 5 AM To 11 PM (No days off - open even on sundays!)</div>
+        <div style={{ flex: '1 1 300px' }}>🏅 <strong>Guided by certified trainers</strong></div>
+        <div style={{ flex: '1 1 300px' }}>💪 <strong>One-on-one personalized training available</strong></div>
       </div>
 
       {/* Gym Vibe Video Section */}
@@ -176,6 +176,7 @@ export default function Home() {
             <p style={{ fontSize: '1.2rem', margin: '10px 0' }}>📞 <strong>Contact:</strong> 7906049106</p>
             <p style={{ fontSize: '1.2rem', margin: '10px 0' }}>📱 <strong>Instagram:</strong> <a href="https://instagram.com/seefit21" style={{ color: '#E1306C', textDecoration: 'none' }}>@seefit21</a></p>
             
+            {/* Map link updated below */}
             <a href="https://maps.app.goo.gl/hX9jFfbAQRs5W5eu7?g_st=aw" target="_blank" rel="noreferrer" style={{ display: 'inline-block', marginTop: '20px', padding: '12px 20px', fontSize: '1.1rem', fontWeight: 'bold', color: '#212529', backgroundColor: '#fff', textDecoration: 'none', borderRadius: '5px', textAlign: 'center' }}>
               🌍 Open in Google Maps
             </a>
