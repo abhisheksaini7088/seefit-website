@@ -20,8 +20,8 @@ export default function Home() {
             style={{ width: '250px', maxWidth: '100%', height: 'auto', marginBottom: '10px' }} 
           />
           
-          {/* Nayi tagline yahan update ki gayi hai */}
-          <p style={{ fontSize: '1.8rem', fontWeight: 'bold', marginTop: '10px', color: '#fff', lineHeight: '1.4' }}>
+          {/* Nayi tagline yahan update ki gayi hai aur size chhota (1.4rem) kiya gaya hai */}
+          <p style={{ fontSize: '1.4rem', fontWeight: 'bold', marginTop: '10px', color: '#fff', lineHeight: '1.4' }}>
             Join our community and get a personalized plan that works the way you want
           </p>
           <p style={{ fontSize: '1.1rem', color: '#ccc', marginTop: '15px', fontWeight: '500' }}>
