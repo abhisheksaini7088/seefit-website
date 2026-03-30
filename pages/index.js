@@ -38,7 +38,7 @@ export default function Home() {
           
           {/* Yahan text ki jagah aapka logo lagaya gaya hai */}
           <img 
-            src="/see fit .jpeg" 
+            src="/public/1774845752586.jpg" 
             alt="SEE FIT Logo" 
             style={{ width: '250px', maxWidth: '100%', height: 'auto', marginBottom: '10px' }} 
           />
