@@ -26,24 +26,19 @@ export default function Home() {
     <div style={{ margin: 0, padding: 0, fontFamily: '"Segoe UI", Roboto, Helvetica, Arial, sans-serif', backgroundColor: '#f8f9fa', color: '#212529' }}>
       <Head>
         <title>SEE FIT Gym | Join our community</title>
-        {/* Yahan humne favicon add kiya hai jisse tab par logo dikhega */}
+        {/* Favicon add kiya hai jisse tab par logo dikhega */}
         <link rel="icon" href="/see fit .jpeg" />
       </Head>
 
       {/* Hero Section */}
       <div style={{ position: 'relative', height: '80vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center', backgroundColor: '#000', overflow: 'hidden' }}>
-        {/* Yahan tumhari background image lagayi hai */}
-        <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, backgroundImage: 'url("/IMG-20260227-WA0000.jpg")', backgroundSize: 'cover', backgroundPosition: 'center', opacity: 0.3, zIndex: 0 }}></div>
+        {/* Hero Background Image - user does not want to remove this */}
+        <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, backgroundImage: 'url("/1774845752586.jpg")', backgroundSize: 'cover', backgroundPosition: 'center', opacity: 0.3, zIndex: 0 }}></div>
         <div style={{ position: 'relative', zIndex: 1, padding: '20px', maxWidth: '800px' }}>
           
-          {/* Yahan text ki jagah aapka logo lagaya gaya hai */}
-          <img 
-            src="/see fit .jpeg" 
-            alt="SEE FIT Logo" 
-            style={{ width: '250px', maxWidth: '100%', height: 'auto', marginBottom: '10px' }} 
-          />
+          {/* logo aur human icon content container se remove ho gaya hai, bas text content bacha hai */}
           
-          {/* Nayi tagline */}
+          {/* Main Tagline */}
           <p style={{ fontSize: '1.4rem', fontWeight: 'bold', marginTop: '10px', color: '#fff', lineHeight: '1.4' }}>
             Join our community and get a personalized plan that works the way you want
           </p>
@@ -56,6 +51,7 @@ export default function Home() {
             Chat on WhatsApp
           </a>
 
+          {/* Secondary tagline, smaller, positioned below WA button */}
           <p style={{ fontSize: '1.1rem', color: '#ccc', marginTop: '15px', fontWeight: '500' }}>
             Transforming lives since 15 Feb 2026 | 5+ Years Experience
           </p>
@@ -176,7 +172,6 @@ export default function Home() {
             <p style={{ fontSize: '1.2rem', margin: '10px 0' }}>📞 <strong>Contact:</strong> 7906049106</p>
             <p style={{ fontSize: '1.2rem', margin: '10px 0' }}>📱 <strong>Instagram:</strong> <a href="https://instagram.com/seefit21" style={{ color: '#E1306C', textDecoration: 'none' }}>@seefit21</a></p>
             
-            {/* Map link updated below */}
             <a href="https://maps.app.goo.gl/hX9jFfbAQRs5W5eu7?g_st=aw" target="_blank" rel="noreferrer" style={{ display: 'inline-block', marginTop: '20px', padding: '12px 20px', fontSize: '1.1rem', fontWeight: 'bold', color: '#212529', backgroundColor: '#fff', textDecoration: 'none', borderRadius: '5px', textAlign: 'center' }}>
               🌍 Open in Google Maps
             </a>
