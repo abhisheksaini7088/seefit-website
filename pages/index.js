@@ -66,7 +66,7 @@ export default function Home() {
             </div>
           </div>
           
-          {/* NEW SECTION: Why Us & The First Step (Black Box Removed) */}
+          {/* NEW SECTION: Why Us & The First Step */}
           <div style={{ margin: '30px 0', padding: '10px' }}>
             {/* Color changed to White and added text shadow for readability */}
             <h2 style={{ fontSize: '2.2rem', color: '#ffffff', textShadow: '2px 2px 5px #000000', marginBottom: '15px', textTransform: 'uppercase', fontWeight: '900', letterSpacing: '1px' }}>
@@ -75,7 +75,7 @@ export default function Home() {
             
             {/* Added strong text-shadow to paragraph so it's readable without background */}
             <p style={{ fontSize: '1.1rem', color: '#ffffff', textShadow: '1px 1px 4px #000000', lineHeight: '1.6', marginBottom: '30px', maxWidth: '750px', margin: '0 auto 30px auto', fontWeight: '500' }}>
-              At SEE FIT Fitness Dehradun, the support is real and it starts the moment we meet. Our trainers don&apos;t have one plan that fits everyone, they develop a plan that fits you - a total fitness experience designed around your abilities, your body, and your goals. Your plan will contain a 360 approach to your health.
+              At SEE FIT Fitness Dehradun, the support is real and it starts the moment we meet. Our trainers don't have one plan that fits everyone, they develop a plan that fits you - a total fitness experience designed around your abilities, your body, and your goals. Your plan will contain a 360 approach to your health.
             </p>
             
             <h3 style={{ fontSize: '1.6rem', color: '#C6E815', textShadow: '2px 2px 4px #000000', marginBottom: '10px', marginTop: '20px' }}>
@@ -127,34 +127,44 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Membership Plans - MOVED UP HERE */}
+      {/* Membership Plans - UPDATED SECTION */}
       <div style={{ padding: '60px 20px', backgroundColor: '#e9ecef' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto', textAlign: 'center' }}>
           <h2 style={{ fontSize: '2.5rem', color: '#ff4500', marginBottom: '40px', textTransform: 'uppercase' }}>Membership Plans</h2>
           <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '30px' }}>
-            <div style={{ backgroundColor: '#fff', padding: '40px', borderRadius: '15px', width: '250px', boxShadow: '0 10px 20px rgba(0,0,0,0.08)' }}>
-              <h3 style={{ fontSize: '1.8rem', margin: '0 0 15px 0' }}>3 Months</h3>
-              <p style={{ fontSize: '2.5rem', fontWeight: '900', color: '#ff4500', margin: '0 0 20px 0' }}>₹3800</p>
-            </div>
+            
+            {/* 6 Months Plan */}
             <div style={{ backgroundColor: '#fff', padding: '40px', borderRadius: '15px', width: '250px', boxShadow: '0 10px 20px rgba(0,0,0,0.08)', border: '2px solid #ff4500' }}>
               <div style={{ backgroundColor: '#ff4500', color: '#fff', padding: '5px', borderRadius: '5px', fontSize: '0.9rem', marginBottom: '15px', display: 'inline-block', fontWeight: 'bold' }}>POPULAR</div>
               <h3 style={{ fontSize: '1.8rem', margin: '0 0 15px 0' }}>6 Months</h3>
               <p style={{ fontSize: '2.5rem', fontWeight: '900', color: '#ff4500', margin: '0 0 20px 0' }}>₹6000</p>
             </div>
+            
+            {/* 13 Months Plan - Changed to ₹10000 */}
             <div style={{ backgroundColor: '#fff', padding: '40px', borderRadius: '15px', width: '250px', boxShadow: '0 10px 20px rgba(0,0,0,0.08)' }}>
               <h3 style={{ fontSize: '1.8rem', margin: '0 0 15px 0' }}>13 Months</h3>
-              <p style={{ fontSize: '2.5rem', fontWeight: '900', color: '#ff4500', margin: '0 0 20px 0' }}>₹9000</p>
+              <p style={{ fontSize: '2.5rem', fontWeight: '900', color: '#ff4500', margin: '0 0 20px 0' }}>₹10000</p>
             </div>
-            <div style={{ backgroundColor: '#111', color: '#fff', padding: '40px', borderRadius: '15px', width: '250px', boxShadow: '0 10px 20px rgba(0,0,0,0.15)' }}>
+            
+            {/* Personal Training - Updated to WhatsApp Link */}
+            <div style={{ backgroundColor: '#111', color: '#fff', padding: '40px', borderRadius: '15px', width: '250px', boxShadow: '0 10px 20px rgba(0,0,0,0.15)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
               <h3 style={{ fontSize: '1.8rem', margin: '0 0 15px 0' }}>Personal Training</h3>
-              <p style={{ fontSize: '2.5rem', fontWeight: '900', color: '#ff4500', margin: '0 0 10px 0' }}>₹6500</p>
-              <p style={{ margin: 0, fontSize: '0.9rem', color: '#aaa' }}>+ Gym Fee</p>
+              <p style={{ margin: '0 0 20px 0', fontSize: '1rem', color: '#ccc', lineHeight: '1.4' }}>Customized plans tailored for your specific fitness goals.</p>
+              
+              {/* Box ke andar WhatsApp button */}
+              <a href="https://wa.me/917906049106?text=Hi%20SEE%20FIT%20Gym,%20I%20want%20to%20know%20the%20details%20and%20pricing%20for%20Personal%20Training." target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', padding: '10px 20px', fontSize: '1rem', fontWeight: 'bold', color: '#fff', backgroundColor: '#25D366', textDecoration: 'none', borderRadius: '5px', transition: 'transform 0.2s' }}>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style={{ width: '18px', height: '18px', fill: 'currentColor', marginRight: '8px' }}>
+                  <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zM223.9 413.6c-33.6 0-66.5-9-95.2-26.1l-6.8-4-70.8 18.6 18.9-69-4.4-7c-18.8-30.2-28.7-65.1-28.7-101.4 0-103.5 84.3-187.8 187.9-187.8 50.2 0 97.3 19.6 132.8 55.1 35.5 35.5 55.1 82.6 55.1 132.9 0 103.4-84.3 187.8-187.6 187.8zM326.6 288.7c-5.6-2.8-33.3-16.4-38.5-18.3-5.2-1.9-9-2.8-12.8 2.8-3.8 5.6-14.6 18.3-17.9 22-3.3 3.8-6.6 4.2-12.2 1.4-5.6-2.8-23.8-8.8-45.3-27.9-16.7-14.9-28-33.3-31.3-38.9-3.3-5.6-.4-8.7 2.4-11.5 2.5-2.5 5.6-6.6 8.5-9.9 2.8-3.3 3.8-5.6 5.6-9.4 1.9-3.8.9-7.1-.5-9.9-1.4-2.8-12.8-30.9-17.6-42.3-4.6-11.1-9.3-9.6-12.8-9.8-3.3-.2-7.1-.2-10.8-.2-3.8 0-9.9 1.4-15.1 7.1-5.2 5.6-19.8 19.3-19.8 47.1 0 27.8 20.3 54.7 23.1 58.5 2.8 3.8 39.8 60.8 96.4 85.3 13.5 5.8 24 9.3 32.2 11.9 13.6 4.3 26 3.7 35.8 2.2 11-1.7 33.3-13.6 38-26.8 4.7-13.2 4.7-24.5 3.3-26.8-1.4-2.4-5.2-3.8-10.8-6.6z"/>
+                </svg>
+                Ask on WhatsApp
+              </a>
             </div>
+
           </div>
         </div>
       </div>
 
-      {/* Mission & Services - MOVED DOWN HERE */}
+      {/* Mission & Services */}
       <div style={{ padding: '60px 20px' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto', textAlign: 'center' }}>
           <h2 style={{ fontSize: '2.5rem', color: '#ff4500', marginBottom: '40px', textTransform: 'uppercase' }}>Our Mission</h2>
