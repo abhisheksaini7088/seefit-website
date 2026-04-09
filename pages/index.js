@@ -22,17 +22,18 @@ export default function Home() {
     window.open(whatsappUrl, '_blank');
   };
 
-  // Text logo ke liye custom CSS styles
+  // Text logo ke liye custom CSS styles (Updated for mobile boldness)
   const letterStyle = {
     fontWeight: '900',
-    fontFamily: '"Arial Black", Impact, sans-serif',
-    WebkitTextStroke: '2px #000', // Letters ke charo taraf black border
-    textShadow: '3px 3px 0px rgba(0,0,0,0.9)', // Letters ka shadow
-    fontSize: '5rem', // Text ka size
+    fontFamily: 'Impact, "Arial Black", "Segoe UI Black", sans-serif', // Mobile support ke liye font stack update kiya
+    WebkitTextStroke: '1px #000', // Black outline
+    textShadow: '3px 4px 0px rgba(0,0,0,1)', // Solid black shadow
+    fontSize: 'clamp(4rem, 15vw, 6rem)', // Responsive size (Mobile par bada dikhega)
     lineHeight: '1',
+    letterSpacing: '2px', // Letters ke beech thoda space
   };
 
-  // S aur F ke liye Lime Green color (Image ke hisaab se)
+  // S aur F ke liye Lime Green color
   const greenLetter = { ...letterStyle, color: '#C6E815' }; 
   // Baaki letters ke liye White color
   const whiteLetter = { ...letterStyle, color: '#FFFFFF' };
@@ -41,49 +42,52 @@ export default function Home() {
     <div style={{ margin: 0, padding: 0, fontFamily: '"Segoe UI", Roboto, Helvetica, Arial, sans-serif', backgroundColor: '#f8f9fa', color: '#212529' }}>
       <Head>
         <title>SEE FIT Gym | Join our community</title>
-        {/* Yahan favicon laga hai jo tab par dikhega */}
         <link rel="icon" href="/see fit .jpeg" />
       </Head>
 
-      {/* Hero Section - Updated height for better mobile text fitting */}
+      {/* Hero Section */}
       <div style={{ position: 'relative', minHeight: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center', backgroundColor: '#000', overflow: 'hidden', padding: '60px 20px' }}>
-        {/* Yahan tumhari background image lagayi hai */}
-        <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, backgroundImage: 'url("/IMG-20260227-WA0000.jpg")', backgroundSize: 'cover', backgroundPosition: 'center', opacity: 0.3, zIndex: 0 }}></div>
+        {/* Background Image */}
+        <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, backgroundImage: 'url("/IMG-20260227-WA0000.jpg")', backgroundSize: 'cover', backgroundPosition: 'center', opacity: 0.4, zIndex: 0 }}></div>
+        
         <div style={{ position: 'relative', zIndex: 1, padding: '20px', maxWidth: '900px', width: '100%' }}>
           
           {/* Styled Text Logo */}
-          <div style={{ display: 'flex', justifyContent: 'center', gap: '20px', marginBottom: '20px', flexWrap: 'wrap' }}>
+          <div style={{ display: 'flex', justifyContent: 'center', gap: '15px', marginBottom: '20px', flexWrap: 'wrap' }}>
             <div style={{ display: 'flex' }}>
               <span style={greenLetter}>S</span>
               <span style={whiteLetter}>E</span>
               <span style={whiteLetter}>E</span>
             </div>
-            <div style={{ display: 'flex' }}>
+            <div style={{ display: 'flex', marginLeft: '10px' }}>
               <span style={greenLetter}>F</span>
               <span style={whiteLetter}>I</span>
               <span style={whiteLetter}>T</span>
             </div>
           </div>
           
-          {/* NEW SECTION: Why Us & The First Step */}
-          <div style={{ margin: '30px 0', padding: '20px', backgroundColor: 'rgba(0, 0, 0, 0.4)', borderRadius: '15px' }}>
-            <h2 style={{ fontSize: '2rem', color: '#ff4500', marginBottom: '15px', textTransform: 'uppercase' }}>
+          {/* NEW SECTION: Why Us & The First Step (Black Box Removed) */}
+          <div style={{ margin: '30px 0', padding: '10px' }}>
+            {/* Color changed to White and added text shadow for readability */}
+            <h2 style={{ fontSize: '2.2rem', color: '#ffffff', textShadow: '2px 2px 5px #000000', marginBottom: '15px', textTransform: 'uppercase', fontWeight: '900', letterSpacing: '1px' }}>
               Why us?
             </h2>
-            <p style={{ fontSize: '1.1rem', color: '#e0e0e0', lineHeight: '1.6', marginBottom: '30px', maxWidth: '750px', margin: '0 auto 30px auto' }}>
+            
+            {/* Added strong text-shadow to paragraph so it's readable without background */}
+            <p style={{ fontSize: '1.1rem', color: '#ffffff', textShadow: '1px 1px 4px #000000', lineHeight: '1.6', marginBottom: '30px', maxWidth: '750px', margin: '0 auto 30px auto', fontWeight: '500' }}>
               At SEE FIT Fitness Dehradun, the support is real and it starts the moment we meet. Our trainers don&apos;t have one plan that fits everyone, they develop a plan that fits you - a total fitness experience designed around your abilities, your body, and your goals. Your plan will contain a 360 approach to your health.
             </p>
             
-            <h3 style={{ fontSize: '1.6rem', color: '#C6E815', marginBottom: '10px' }}>
+            <h3 style={{ fontSize: '1.6rem', color: '#C6E815', textShadow: '2px 2px 4px #000000', marginBottom: '10px', marginTop: '20px' }}>
               The first step?
             </h3>
-            {/* Tagline / Answer to The first step */}
-            <p style={{ fontSize: '1.3rem', fontWeight: 'bold', color: '#fff', lineHeight: '1.4' }}>
+            
+            <p style={{ fontSize: '1.3rem', fontWeight: 'bold', color: '#fff', textShadow: '2px 2px 5px #000000', lineHeight: '1.4' }}>
               Join our community and get a personalized plan that works the way you want
             </p>
           </div>
 
-          {/* WhatsApp Button with Pre-filled Message */}
+          {/* WhatsApp Button */}
           <a href="https://wa.me/917906049106?text=Hi%20SEE%20FIT%20Gym,%20I%20am%20interested%20in%20joining%20and%20would%20like%20to%20know%20more." target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', marginTop: '10px', padding: '12px 30px', fontSize: '1.1rem', fontWeight: 'bold', color: '#000', backgroundColor: '#C6E815', textDecoration: 'none', borderRadius: '50px', boxShadow: '0px 4px 15px rgba(198, 232, 21, 0.4)', transition: 'transform 0.2s' }}>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style={{ width: '22px', height: '22px', fill: 'currentColor', marginRight: '8px' }}>
               <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zM223.9 413.6c-33.6 0-66.5-9-95.2-26.1l-6.8-4-70.8 18.6 18.9-69-4.4-7c-18.8-30.2-28.7-65.1-28.7-101.4 0-103.5 84.3-187.8 187.9-187.8 50.2 0 97.3 19.6 132.8 55.1 35.5 35.5 55.1 82.6 55.1 132.9 0 103.4-84.3 187.8-187.6 187.8zM326.6 288.7c-5.6-2.8-33.3-16.4-38.5-18.3-5.2-1.9-9-2.8-12.8 2.8-3.8 5.6-14.6 18.3-17.9 22-3.3 3.8-6.6 4.2-12.2 1.4-5.6-2.8-23.8-8.8-45.3-27.9-16.7-14.9-28-33.3-31.3-38.9-3.3-5.6-.4-8.7 2.4-11.5 2.5-2.5 5.6-6.6 8.5-9.9 2.8-3.3 3.8-5.6 5.6-9.4 1.9-3.8.9-7.1-.5-9.9-1.4-2.8-12.8-30.9-17.6-42.3-4.6-11.1-9.3-9.6-12.8-9.8-3.3-.2-7.1-.2-10.8-.2-3.8 0-9.9 1.4-15.1 7.1-5.2 5.6-19.8 19.3-19.8 47.1 0 27.8 20.3 54.7 23.1 58.5 2.8 3.8 39.8 60.8 96.4 85.3 13.5 5.8 24 9.3 32.2 11.9 13.6 4.3 26 3.7 35.8 2.2 11-1.7 33.3-13.6 38-26.8 4.7-13.2 4.7-24.5 3.3-26.8-1.4-2.4-5.2-3.8-10.8-6.6z"/>
@@ -123,22 +127,8 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Mission & Services */}
-      <div style={{ backgroundColor: '#e9ecef', padding: '60px 20px' }}>
-        <div style={{ maxWidth: '1200px', margin: '0 auto', textAlign: 'center' }}>
-          <h2 style={{ fontSize: '2.5rem', color: '#ff4500', marginBottom: '40px', textTransform: 'uppercase' }}>Our Mission</h2>
-          <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '20px' }}>
-            {['Personal Training', 'CrossFit', 'Group Training', 'Zumba & Yoga Classes', 'Custom Diet & Workout Plan', 'Fat Loss & Weight Gaining'].map((item, index) => (
-              <div key={index} style={{ backgroundColor: '#fff', padding: '20px 30px', borderRadius: '10px', boxShadow: '0 4px 6px rgba(0,0,0,0.05)', fontSize: '1.2rem', fontWeight: 'bold', color: '#333', borderBottom: '4px solid #ff4500' }}>
-                ✓ {item}
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      {/* Membership Plans */}
-      <div style={{ padding: '60px 20px' }}>
+      {/* Membership Plans - MOVED UP HERE */}
+      <div style={{ padding: '60px 20px', backgroundColor: '#e9ecef' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto', textAlign: 'center' }}>
           <h2 style={{ fontSize: '2.5rem', color: '#ff4500', marginBottom: '40px', textTransform: 'uppercase' }}>Membership Plans</h2>
           <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '30px' }}>
@@ -160,6 +150,20 @@ export default function Home() {
               <p style={{ fontSize: '2.5rem', fontWeight: '900', color: '#ff4500', margin: '0 0 10px 0' }}>₹6500</p>
               <p style={{ margin: 0, fontSize: '0.9rem', color: '#aaa' }}>+ Gym Fee</p>
             </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Mission & Services - MOVED DOWN HERE */}
+      <div style={{ padding: '60px 20px' }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto', textAlign: 'center' }}>
+          <h2 style={{ fontSize: '2.5rem', color: '#ff4500', marginBottom: '40px', textTransform: 'uppercase' }}>Our Mission</h2>
+          <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '20px' }}>
+            {['Personal Training', 'CrossFit', 'Group Training', 'Zumba & Yoga Classes', 'Custom Diet & Workout Plan', 'Fat Loss & Weight Gaining'].map((item, index) => (
+              <div key={index} style={{ backgroundColor: '#fff', padding: '20px 30px', borderRadius: '10px', boxShadow: '0 4px 6px rgba(0,0,0,0.05)', fontSize: '1.2rem', fontWeight: 'bold', color: '#333', borderBottom: '4px solid #ff4500' }}>
+                ✓ {item}
+              </div>
+            ))}
           </div>
         </div>
       </div>
