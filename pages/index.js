@@ -41,18 +41,18 @@ export default function Home() {
     <div style={{ margin: 0, padding: 0, fontFamily: '"Segoe UI", Roboto, Helvetica, Arial, sans-serif', backgroundColor: '#f8f9fa', color: '#212529' }}>
       <Head>
         <title>SEE FIT Gym | Join our community</title>
-        {/* Yahan favicon laga hai jo tab par dikhega (ye image hi hoti hai) */}
+        {/* Yahan favicon laga hai jo tab par dikhega */}
         <link rel="icon" href="/see fit .jpeg" />
       </Head>
 
-      {/* Hero Section */}
-      <div style={{ position: 'relative', height: '80vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center', backgroundColor: '#000', overflow: 'hidden' }}>
+      {/* Hero Section - Updated height for better mobile text fitting */}
+      <div style={{ position: 'relative', minHeight: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center', backgroundColor: '#000', overflow: 'hidden', padding: '60px 20px' }}>
         {/* Yahan tumhari background image lagayi hai */}
         <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, backgroundImage: 'url("/IMG-20260227-WA0000.jpg")', backgroundSize: 'cover', backgroundPosition: 'center', opacity: 0.3, zIndex: 0 }}></div>
-        <div style={{ position: 'relative', zIndex: 1, padding: '20px', maxWidth: '800px' }}>
+        <div style={{ position: 'relative', zIndex: 1, padding: '20px', maxWidth: '900px', width: '100%' }}>
           
-          {/* YAHAN CODE CHANGE KIYA GAYA HAI: Image ki jagah Styled Text Logo */}
-          <div style={{ display: 'flex', justifyContent: 'center', gap: '25px', marginBottom: '15px' }}>
+          {/* Styled Text Logo */}
+          <div style={{ display: 'flex', justifyContent: 'center', gap: '20px', marginBottom: '20px', flexWrap: 'wrap' }}>
             <div style={{ display: 'flex' }}>
               <span style={greenLetter}>S</span>
               <span style={whiteLetter}>E</span>
@@ -65,26 +65,39 @@ export default function Home() {
             </div>
           </div>
           
-          {/* Nayi tagline */}
-          <p style={{ fontSize: '1.4rem', fontWeight: 'bold', marginTop: '10px', color: '#fff', lineHeight: '1.4' }}>
-            Join our community and get a personalized plan that works the way you want
-          </p>
+          {/* NEW SECTION: Why Us & The First Step */}
+          <div style={{ margin: '30px 0', padding: '20px', backgroundColor: 'rgba(0, 0, 0, 0.4)', borderRadius: '15px' }}>
+            <h2 style={{ fontSize: '2rem', color: '#ff4500', marginBottom: '15px', textTransform: 'uppercase' }}>
+              Why us?
+            </h2>
+            <p style={{ fontSize: '1.1rem', color: '#e0e0e0', lineHeight: '1.6', marginBottom: '30px', maxWidth: '750px', margin: '0 auto 30px auto' }}>
+              At SEE FIT Fitness Dehradun, the support is real and it starts the moment we meet. Our trainers don't have one plan that fits everyone, they develop a plan that fits you - a total fitness experience designed around your abilities, your body, and your goals. Your plan will contain a 360 approach to your health.
+            </p>
+            
+            <h3 style={{ fontSize: '1.6rem', color: '#C6E815', marginBottom: '10px' }}>
+              The first step?
+            </h3>
+            {/* Tagline / Answer to The first step */}
+            <p style={{ fontSize: '1.3rem', fontWeight: 'bold', color: '#fff', lineHeight: '1.4' }}>
+              Join our community and get a personalized plan that works the way you want
+            </p>
+          </div>
 
           {/* WhatsApp Button with Pre-filled Message */}
-          <a href="https://wa.me/917906049106?text=Hi%20SEE%20FIT%20Gym,%20I%20am%20interested%20in%20joining%20and%20would%20like%20to%20know%20more." target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', marginTop: '15px', padding: '10px 25px', fontSize: '1.1rem', fontWeight: 'bold', color: '#fff', backgroundColor: '#25D366', textDecoration: 'none', borderRadius: '50px', boxShadow: '0px 4px 10px rgba(37, 211, 102, 0.4)', transition: 'transform 0.2s' }}>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style={{ width: '20px', height: '20px', fill: 'currentColor', marginRight: '8px' }}>
+          <a href="https://wa.me/917906049106?text=Hi%20SEE%20FIT%20Gym,%20I%20am%20interested%20in%20joining%20and%20would%20like%20to%20know%20more." target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', marginTop: '10px', padding: '12px 30px', fontSize: '1.1rem', fontWeight: 'bold', color: '#000', backgroundColor: '#C6E815', textDecoration: 'none', borderRadius: '50px', boxShadow: '0px 4px 15px rgba(198, 232, 21, 0.4)', transition: 'transform 0.2s' }}>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style={{ width: '22px', height: '22px', fill: 'currentColor', marginRight: '8px' }}>
               <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zM223.9 413.6c-33.6 0-66.5-9-95.2-26.1l-6.8-4-70.8 18.6 18.9-69-4.4-7c-18.8-30.2-28.7-65.1-28.7-101.4 0-103.5 84.3-187.8 187.9-187.8 50.2 0 97.3 19.6 132.8 55.1 35.5 35.5 55.1 82.6 55.1 132.9 0 103.4-84.3 187.8-187.6 187.8zM326.6 288.7c-5.6-2.8-33.3-16.4-38.5-18.3-5.2-1.9-9-2.8-12.8 2.8-3.8 5.6-14.6 18.3-17.9 22-3.3 3.8-6.6 4.2-12.2 1.4-5.6-2.8-23.8-8.8-45.3-27.9-16.7-14.9-28-33.3-31.3-38.9-3.3-5.6-.4-8.7 2.4-11.5 2.5-2.5 5.6-6.6 8.5-9.9 2.8-3.3 3.8-5.6 5.6-9.4 1.9-3.8.9-7.1-.5-9.9-1.4-2.8-12.8-30.9-17.6-42.3-4.6-11.1-9.3-9.6-12.8-9.8-3.3-.2-7.1-.2-10.8-.2-3.8 0-9.9 1.4-15.1 7.1-5.2 5.6-19.8 19.3-19.8 47.1 0 27.8 20.3 54.7 23.1 58.5 2.8 3.8 39.8 60.8 96.4 85.3 13.5 5.8 24 9.3 32.2 11.9 13.6 4.3 26 3.7 35.8 2.2 11-1.7 33.3-13.6 38-26.8 4.7-13.2 4.7-24.5 3.3-26.8-1.4-2.4-5.2-3.8-10.8-6.6z"/>
             </svg>
             Chat on WhatsApp
           </a>
 
-          <p style={{ fontSize: '1.1rem', color: '#ccc', marginTop: '15px', fontWeight: '500' }}>
+          <p style={{ fontSize: '1rem', color: '#ccc', marginTop: '20px', fontWeight: '500' }}>
             Transforming lives since 15 Feb 2026 | 5+ Years Experience
           </p>
         </div>
       </div>
 
-      {/* Timings & Team Banner - Updated for better mobile view */}
+      {/* Timings & Team Banner */}
       <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', backgroundColor: '#212529', color: '#fff', padding: '20px 10px', textAlign: 'center', gap: '20px' }}>
         <div style={{ flex: '1 1 300px' }}>🕒 <strong>Timings:</strong> 5 AM To 11 PM (No days off - open even on sundays!)</div>
         <div style={{ flex: '1 1 300px' }}>🏅 <strong>Guided by certified trainers</strong></div>
@@ -95,7 +108,6 @@ export default function Home() {
       <div style={{ backgroundColor: '#111', padding: '60px 20px', textAlign: 'center' }}>
         <h2 style={{ fontSize: '2.5rem', color: '#ff4500', marginBottom: '30px', textTransform: 'uppercase' }}>Experience The Vibe</h2>
         <video controls autoPlay muted loop style={{ maxWidth: '100%', width: '800px', borderRadius: '15px', boxShadow: '0 10px 30px rgba(255, 69, 0, 0.2)', border: '2px solid #333' }}>
-          {/* Yahan tumhara video link kiya hai */}
           <source src="/VID-20260227-WA0005.mp4" type="video/mp4" />
           Your browser does not support the video.
         </video>
@@ -105,7 +117,6 @@ export default function Home() {
       <div style={{ padding: '60px 20px', maxWidth: '1200px', margin: '0 auto', textAlign: 'center' }}>
         <h2 style={{ fontSize: '2.5rem', color: '#ff4500', marginBottom: '40px', textTransform: 'uppercase' }}>Our Space</h2>
         <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '20px' }}>
-          {/* Yahan tumhari 3 baaki photos lagayi hain */}
           <img src="/IMG-20260227-WA0002.jpg" alt="SEE FIT Space 1" style={{ width: '350px', height: '250px', objectFit: 'cover', borderRadius: '10px', boxShadow: '0 4px 10px rgba(0,0,0,0.1)' }} />
           <img src="/IMG-20260227-WA0003.jpg" alt="SEE FIT Space 2" style={{ width: '350px', height: '250px', objectFit: 'cover', borderRadius: '10px', boxShadow: '0 4px 10px rgba(0,0,0,0.1)' }} />
           <img src="/IMG-20260227-WA0004.jpg" alt="SEE FIT Space 3" style={{ width: '350px', height: '250px', objectFit: 'cover', borderRadius: '10px', boxShadow: '0 4px 10px rgba(0,0,0,0.1)' }} />
@@ -176,7 +187,6 @@ export default function Home() {
           <div style={{ flex: '1 1 400px', backgroundColor: '#343a40', padding: '30px', borderRadius: '15px' }}>
             <h3 style={{ fontSize: '2rem', color: '#ff4500', margin: '0 0 20px 0' }}>Join The Tribe!</h3>
             <p style={{ marginBottom: '20px', color: '#ccc' }}>Fill out the form and our team will get back to you.</p>
-            {/* Yahan Form me onSubmit function lagaya gaya hai */}
             <form onSubmit={sendToWhatsApp} style={{ display: 'flex', flexDirection: 'column', gap: '15px' }}>
               <input type="text" name="Name" placeholder="Your Name" required style={{ padding: '12px', borderRadius: '5px', border: 'none', fontSize: '1rem' }} />
               <input type="tel" name="Phone" placeholder="Your Phone Number" required style={{ padding: '12px', borderRadius: '5px', border: 'none', fontSize: '1rem' }} />
@@ -198,7 +208,6 @@ export default function Home() {
             <p style={{ fontSize: '1.2rem', margin: '10px 0' }}>📞 <strong>Contact:</strong> 7906049106</p>
             <p style={{ fontSize: '1.2rem', margin: '10px 0' }}>📱 <strong>Instagram:</strong> <a href="https://instagram.com/seefit21" style={{ color: '#E1306C', textDecoration: 'none' }}>@seefit21</a></p>
             
-            {/* Map link updated below */}
             <a href="https://maps.app.goo.gl/hX9jFfbAQRs5W5eu7?g_st=aw" target="_blank" rel="noreferrer" style={{ display: 'inline-block', marginTop: '20px', padding: '12px 20px', fontSize: '1.1rem', fontWeight: 'bold', color: '#212529', backgroundColor: '#fff', textDecoration: 'none', borderRadius: '5px', textAlign: 'center' }}>
               🌍 Open in Google Maps
             </a>
