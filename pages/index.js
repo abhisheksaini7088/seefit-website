@@ -71,7 +71,7 @@ export default function Home() {
               Why us?
             </h2>
             <p style={{ fontSize: '1.1rem', color: '#e0e0e0', lineHeight: '1.6', marginBottom: '30px', maxWidth: '750px', margin: '0 auto 30px auto' }}>
-              At SEE FIT Fitness Dehradun, the support is real and it starts the moment we meet. Our trainers don't have one plan that fits everyone, they develop a plan that fits you - a total fitness experience designed around your abilities, your body, and your goals. Your plan will contain a 360 approach to your health.
+              At SEE FIT Fitness Dehradun, the support is real and it starts the moment we meet. Our trainers don&apos;t have one plan that fits everyone, they develop a plan that fits you - a total fitness experience designed around your abilities, your body, and your goals. Your plan will contain a 360 approach to your health.
             </p>
             
             <h3 style={{ fontSize: '1.6rem', color: '#C6E815', marginBottom: '10px' }}>
