@@ -22,15 +22,15 @@ export default function Home() {
     window.open(whatsappUrl, '_blank');
   };
 
-  // Text logo ke liye custom CSS styles
+  // Text logo ke liye custom CSS styles (Made 2x thicker and much larger)
   const letterStyle = {
     fontWeight: '900',
     fontFamily: 'Impact, "Arial Black", "Segoe UI Black", sans-serif',
-    WebkitTextStroke: '1px #000',
-    textShadow: '3px 4px 0px rgba(0,0,0,1)',
-    fontSize: 'clamp(4rem, 15vw, 6rem)',
+    WebkitTextStroke: '3px #000', // Border ko 2x thick/bold kar diya
+    textShadow: '5px 6px 0px rgba(0,0,0,1)', // Shadow ko bhi uske hisaab se dark aur bada kiya
+    fontSize: 'clamp(5.5rem, 22vw, 9rem)', // Font size kafi bada kar diya
     lineHeight: '1',
-    letterSpacing: '2px',
+    letterSpacing: '3px',
   };
 
   // Colors
@@ -53,7 +53,7 @@ export default function Home() {
         
         <div style={{ position: 'relative', zIndex: 1, padding: '20px', maxWidth: '900px', width: '100%' }}>
           
-          {/* Styled Text Logo */}
+          {/* Styled Text Logo - HUGE & BOLD */}
           <div style={{ display: 'flex', justifyContent: 'center', gap: '15px', marginBottom: '20px', flexWrap: 'wrap' }}>
             <div style={{ display: 'flex' }}>
               <span style={greenLetter}>S</span>
@@ -67,20 +67,17 @@ export default function Home() {
             </div>
           </div>
           
-          {/* UPDATED SECTION: Why Us & The First Step */}
+          {/* Why Us & The First Step */}
           <div style={{ margin: '30px 0', padding: '10px' }}>
             
-            {/* Why us? - Changed to SEE FIT color */}
             <h2 style={{ fontSize: '2.5rem', color: seeFitGreen, textShadow: '3px 3px 5px #000000', marginBottom: '20px', textTransform: 'uppercase', fontWeight: '900', letterSpacing: '1.5px' }}>
               Why us?
             </h2>
             
-            {/* Paragraph - Made bolder, slightly larger, and added stronger drop shadow */}
             <p style={{ fontSize: '1.2rem', color: '#ffffff', textShadow: '2px 2px 6px #000000, 0px 0px 10px rgba(0,0,0,0.8)', lineHeight: '1.6', marginBottom: '35px', maxWidth: '750px', margin: '0 auto 35px auto', fontWeight: '700', letterSpacing: '0.5px' }}>
               At SEE FIT Fitness Dehradun, the support is real and it starts the moment we meet. Our trainers don&apos;t have one plan that fits everyone, they develop a plan that fits you - a total fitness experience designed around your abilities, your body, and your goals. Your plan will contain a 360 approach to your health.
             </p>
             
-            {/* The first step? - Matched exactly with SEE FIT color & boldness */}
             <h3 style={{ fontSize: '1.8rem', color: seeFitGreen, textShadow: '2px 2px 5px #000000', marginBottom: '15px', marginTop: '20px', fontWeight: '900', letterSpacing: '1px' }}>
               The first step?
             </h3>
@@ -133,13 +130,8 @@ export default function Home() {
       {/* Membership Plans */}
       <div style={{ padding: '60px 20px', backgroundColor: '#e9ecef' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto', textAlign: 'center' }}>
-          <h2 style={{ fontSize: '2.5rem', color: '#ff4500', marginBottom: '10px', textTransform: 'uppercase' }}>Membership Plans</h2>
+          <h2 style={{ fontSize: '2.5rem', color: '#ff4500', marginBottom: '40px', textTransform: 'uppercase' }}>Membership Plans</h2>
           
-          {/* NEW LINE ADDED HERE */}
-          <p style={{ fontSize: '1.4rem', color: seeFitGreen, fontWeight: '900', marginBottom: '40px', textTransform: 'uppercase', letterSpacing: '1px', textShadow: '2px 2px 0px #000000' }}>
-            Strengthen everything from calves to confidence
-          </p>
-
           <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '30px' }}>
             
             {/* 6 Months Plan */}
@@ -175,6 +167,12 @@ export default function Home() {
       {/* Mission & Services */}
       <div style={{ padding: '60px 20px' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto', textAlign: 'center' }}>
+          
+          {/* QUOTE MOVED HERE JUST ABOVE "OUR MISSION" WITH NEW DARK COLOR */}
+          <p style={{ fontSize: '1.6rem', color: '#212529', fontWeight: '900', marginBottom: '10px', textTransform: 'uppercase', letterSpacing: '1px' }}>
+            Strengthen everything from calves to confidence
+          </p>
+
           <h2 style={{ fontSize: '2.5rem', color: '#ff4500', marginBottom: '40px', textTransform: 'uppercase' }}>Our Mission</h2>
           <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '20px' }}>
             {['Personal Training', 'CrossFit', 'Group Training', 'Zumba & Yoga Classes', 'Custom Diet & Workout Plan', 'Fat Loss & Weight Gaining'].map((item, index) => (
